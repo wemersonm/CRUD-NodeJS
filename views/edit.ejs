@@ -1,0 +1,37 @@
+<%-include ('./partials/header.ejs')%>
+<body>
+  <%-include ('./partials/navbar.ejs')%>
+
+    <div class="container">
+        <h1 class="text-success text-center">PAGE EDITION USER DATA</h1>
+        <br>
+        <form class="row g-3 form-control" method="POST" action="/updatePerson">
+            <input type="hidden" name="id" value="<%= user.id%>">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Nome</label>
+              <input type="text" class="form-control" name="inputName" value="<%=user.name%>">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" name="inputEmail"  value="<%=user.email%>">
+            </div>
+            <div class="col-6">
+              <label for="inputCPF-CNPJ" class="form-label">CPF/CPNJ</label>
+              <input type="text" class="form-control" name="inputRG" placeholder="xxxxxxxxx-xx"  value="<%=user.rg%>">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Endereço</label>
+              <input type="text" class="form-control" name="inputAddress" placeholder="Apartment, studio, or floor"  value="<%=user.address%>">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Cidade</label>
+              <input type="text" class="form-control" name="inputCity"  value="<%=user.city%>"> 
+            </div>
+
+            
+              <button type="submit" class="btn btn-success btn-sm">Atualizar</button>
+        
+          </form>
+    </div>
+</body>
+<%-include ('./partials/footer.ejs')%>

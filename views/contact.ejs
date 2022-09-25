@@ -1,0 +1,29 @@
+<%-include ('./partials/header.ejs')%>
+<body>
+  <%-include ('./partials/navbar.ejs')%>
+  <div class="container">
+    <h1 class="text-success text-center">PAGE CONTACT</h1>
+    <br />
+    <form class="row g-3 form-control" method="POST" action="#">
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">Nome</label>
+        <input type="text" class="form-control" name="inputName" />
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" name="inputEmail" />
+      </div>
+
+      <div>
+        <textarea
+          name="textContact"
+          class="form-control"
+          placeholder="Mensagem"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success btn-sm">Enviar</button>
+    </form>
+  </div>
+</body>
+<%-include ('./partials/footer.ejs')%>
