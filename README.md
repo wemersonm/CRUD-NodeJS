@@ -1,3 +1,6 @@
 # Painel-de-controle-de-pessoas--Node-Express-Sequelize
 
-CRUD + <i>search</i>
+CRUD + <s>search<s>
+NODE.JS
+EXPRESS
+SEQUELIZE P/ BD
