@@ -1,7 +1,7 @@
 # Painel-de-controle-de-pessoas--Node-Express-Sequelize
 
-CRUD
-NODE.JS
-EXPRESS
-SEQUELIZE P/ BD
+CRUD <br>
+NODE.JS <br>
+EXPRESS <br>
+SEQUELIZE P/ BD <br>
 MARIADB
